@@ -32,5 +32,6 @@ The structure of the template stays the same but less boiler stuff to be deleted
 
 ## TODO
 
-- [ ] Convert this template to a Cookiecutter template using [this guide](https://maciejwalkowiak.com/blog/creating-project-templates-with-cookiecutter/)
+- [ ] Convert this template to a Cookiecutter template
+  using [this guide](https://maciejwalkowiak.com/blog/creating-project-templates-with-cookiecutter/)
   and [this sample template](https://github.com/thomaslee/cookiecutter-java)
