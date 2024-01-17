@@ -13,8 +13,8 @@ Advantages:
 
 1. Centralized version management by [version catalog](https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format) 
    and [gradle platform](https://docs.gradle.org/current/userguide/platforms.html#sub:using-platform-to-control-transitive-deps)
-   (together covers any version declaration in the main build script,
-   and `plugins` and `dependencies` blocks in precompiled script plugins)
+   (together cover any version declaration in the main build script,
+   and `plugins` and `dependencies` blocks in precompiled script plugins, without any hacks)
 2. Composite build, not `buildSrc` (Although it doesn't matter anymore since Gradle 8.0)
 3. Composition over Inheritance using [mixin plugins](gradle/plugins/mixin) and [convention plugins](gradle/plugins/convention)
 
