@@ -6,7 +6,7 @@ import kotlin.io.path.name
 pluginManagement {
   repositories {
     gradlePluginPortal()
-    // google()
+    //google()
   }
   includeBuild("gradle/plugins") // use this to include our own convention plugins
   includeBuild("gradle/settings") // use this to include our own convention plugins for settings.gradle.kts
@@ -15,8 +15,8 @@ pluginManagement {
 dependencyResolutionManagement {
   repositories {
     mavenCentral()
-    // google()
-    maven("https://jitpack.io")
+    //google()
+    //maven("https://jitpack.io")
   }
 
   includeBuild("gradle/platform") // use this to include our own gradle platform to centralize version management
