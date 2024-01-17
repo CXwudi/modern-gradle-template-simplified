@@ -18,6 +18,7 @@ Advantages:
    and `plugins` and `dependencies` blocks in precompiled script plugins, without any hacks)
 2. Composite build, not `buildSrc` (Although it doesn't matter anymore since Gradle 8.0)
 3. Composition over Inheritance using [mixin plugins](gradle/plugins/mixin) and [convention plugins](gradle/plugins/convention)
+   to maximize parallel build performance
 
 ## How to use
 
