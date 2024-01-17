@@ -35,7 +35,7 @@ gradleEnterprise {
   }
 }
 
-rootProject.name = "gradle-learn-project"
+rootProject.name = "My New Gradle Project"
 
 rootDir.toPath().listDirectoryEntries()
   .filter { it.isDirectory() && !it.isHidden() && it.listDirectoryEntries("{build,settings}.{gradle,gradle.kts}").any() }
