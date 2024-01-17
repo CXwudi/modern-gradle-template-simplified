@@ -3,7 +3,7 @@ plugins {
   id("java-platform")
 }
 
-group = "poc.cx.glp"
+group = "my.group"
 
 javaPlatform {
   allowDependencies()
