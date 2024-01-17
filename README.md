@@ -4,10 +4,26 @@ This is the simplified version of [Modern Gradle Template](https://github.com/CX
 
 The structure of the template stays the same but less boiler stuff to be deleted.
 
+## Features
+
+This template can be used to create new spring/quarkus/micronaut/etc. projects, or to create new libraries.
+No matter it is single-module or multi-module, it is easy to start with this template.
+
+Advantages:
+
+1. Centralized version management by [version catalog](https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format) 
+   and [gradle platform](https://docs.gradle.org/current/userguide/platforms.html#sub:using-platform-to-control-transitive-deps)
+   (together covers any version declaration in the main build script,
+   and `plugins` and `dependencies` blocks in precompiled script plugins)
+2. Composite build, not `buildSrc` (Although it doesn't matter anymore since Gradle 8.0)
+3. Composition over Inheritance using [mixin plugins](gradle/plugins/mixin) and [convention plugins](gradle/plugins/convention)
+
 ## How to use
 
 1. Modify the project name `rootProject.name` in [`settings.gradle.kts`](settings.gradle.kts) to your own project name.
-2. Add your own mixin plugins and convention plugins, and don't forget to archive centralized version management by adding your
+2. Add your own mixin plugins and convention plugins,
+   if you want to start from scratch, you can delete all preexisting mixin and convention plugins.
+   Remember to archive centralized version management by adding your
    own libraries into the version catalog.
     - Tip 1: if you want to use version catalog in the `dependencies` block in precompiled script plugins
       (mixin or convention plugins),
@@ -23,8 +39,6 @@ The structure of the template stays the same but less boiler stuff to be deleted
       ((e.g. `id("org.springframework.boot")`)
     - Tip 3: there is a little [`kotlin-jvm` mixin plugin](gradle/plugins/mixin/kotlin-jvm) that demonstrates
       the above two tips.
-      You can also reuse any mixin and convention plugins that already exist in this template.
-      Or if you want to start from scratch, you can delete all mixin and convention plugins.
 3. Delete the sample submodules beginning with `sample-`, and start adding your own submodules.
    Or you can reuse them by renaming them as it only contains a single `build.gradle.kts` file.
 4. (Optional) The template contains a renovate bot config file to automatically update dependencies in the version catalog.
