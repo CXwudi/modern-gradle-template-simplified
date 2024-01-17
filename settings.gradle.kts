@@ -37,6 +37,7 @@ gradleEnterprise {
 
 rootProject.name = "gradle-learn-project"
 
-rootDir.toPath().listDirectoryEntries("sample-*")
-   .filter { it.isDirectory() && !it.isHidden() }
-   .forEach { include(it.name) }
+rootDir.toPath().listDirectoryEntries()
+  .filter { it.isDirectory() && !it.isHidden() }
+  .filter { it.listDirectoryEntries("{build,settings}.{gradle,gradle.kts}").any() }
+  .forEach { include(it.name) }
