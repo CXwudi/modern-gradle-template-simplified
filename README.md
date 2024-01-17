@@ -25,5 +25,12 @@ The structure of the template stays the same but less boiler stuff to be deleted
       the above two tips.
       You can also reuse any mixin and convention plugins that already exist in this template.
       Or if you want to start from scratch, you can delete all mixin and convention plugins.
-3. (Optional) The template contains a renovate bot config file to automatically update dependencies in the version catalog.
+3. Delete the sample submodules beginning with `sample-`, and start adding your own submodules.
+   Or you can reuse them by renaming them as it only contains a single `build.gradle.kts` file.
+4. (Optional) The template contains a renovate bot config file to automatically update dependencies in the version catalog.
    You can delete it if you don't need it.
+
+## TODO
+
+- [ ] Convert this template to a Cookiecutter template using [this guide](https://maciejwalkowiak.com/blog/creating-project-templates-with-cookiecutter/)
+  and [this sample template](https://github.com/thomaslee/cookiecutter-java)
