@@ -14,7 +14,7 @@
 [versions]
 # java version is defined in my.jvm-base.gradle.kts
 # lib versions
-kotlin = "1.9.21"
+kotlin = "1.9.22"
 # plugin dep versions
 # empty for now
 
@@ -29,7 +29,7 @@ settingDep-gradleEnterprise = "com.gradle.enterprise:com.gradle.enterprise.gradl
 settingDep-foojayResolver = "org.gradle.toolchains:foojay-resolver:0.8.0"
 
 # dependencies, naming convention: dep-<nameInCamelCase>
-dep-mockk = "io.mockk:mockk:1.13.8"
+dep-mockk = "io.mockk:mockk:1.13.9"
 
 [plugins]
 # put your plugins used in the main build here
