@@ -49,5 +49,5 @@ dependencies {
   // then this platform will be resolved.
   // Btw, this is also the great workaround for issue https://github.com/gradle/gradle/issues/15383 before Gradle 8.5 was out,
   // but it only works in dependencies {} block
-  versionConstraints(platform("my.group:dev-version-constraints"))
+  versionConstraints(platform("my.platform:dev-version-constraints"))
 }

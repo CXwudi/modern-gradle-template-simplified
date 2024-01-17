@@ -32,5 +32,5 @@ configurations {
 
 dependencies {
   // it is safe to use our own platform here, since any consumer is already using our own platform
-  apiVersionConstraints(platform("my.group:dev-version-constraints"))
+  apiVersionConstraints(platform("my.platform:dev-version-constraints"))
 }

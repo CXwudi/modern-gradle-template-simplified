@@ -3,7 +3,7 @@ plugins {
   id("java-platform")
 }
 
-group = "my.group"
+group = "my.platform"
 
 javaPlatform {
   allowDependencies()
