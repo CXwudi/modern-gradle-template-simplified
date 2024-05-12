@@ -17,7 +17,7 @@ java = "21"
 # lib versions
 kotlin = "1.9.24"
 # plugin dep versions
-# empty for now
+slf4j = "2.0.13"
 
 [libraries]
 # unless there is a keyword conflict or the name is wired
@@ -31,6 +31,7 @@ settingDep-foojayResolver = "org.gradle.toolchains:foojay-resolver:0.8.0"
 
 # dependencies, naming convention: dep-<nameInCamelCase>
 dep-mockk = "io.mockk:mockk:1.13.10"
+dep-slf4j = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
 
 [plugins]
 # put your plugins used in the main build here

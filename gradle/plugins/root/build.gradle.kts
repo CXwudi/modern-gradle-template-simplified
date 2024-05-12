@@ -23,4 +23,5 @@ buildConfig {
   generateAtSync = false
 
   buildConfigField(Int::class.java, "JAVA_VERSION", libs.versions.java.get().toInt())
+  buildConfigField(String::class.java, "SLF4J_API", libs.dep.slf4j.get().toString())
 }
