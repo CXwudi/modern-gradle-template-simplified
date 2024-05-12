@@ -1,6 +1,7 @@
 dependencyResolutionManagement {
   repositories {
     gradlePluginPortal()
+    mavenCentral()
   }
   // currently unused, just added for demo purposes
 //  includeBuild("../platform")

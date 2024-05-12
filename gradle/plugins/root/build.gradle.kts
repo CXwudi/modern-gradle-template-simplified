@@ -3,6 +3,7 @@
  */
 plugins {
   `kotlin-dsl` // !id("kotlin-dsl"), this tells gradle to use kotlin dsl
+  alias(libs.plugins.buildConfig)
 }
 
 dependencies {
@@ -12,4 +13,14 @@ dependencies {
   // 2. use version catalog, done in settings.gradle.kts
   // 3. create even a new precompiled plugin that has `kotlin-dsl` plugin applied and our own versioning,
   //   then in settings.gradle.kts, includeBuild() that plugin, and in here apply the plugin
+}
+
+buildConfig {
+  className("VersionCatalog")
+  packageName("my.root.util")
+
+  useKotlinOutput { internalVisibility = false }
+  generateAtSync = false
+
+  buildConfigField(Int::class.java, "JAVA_VERSION", libs.versions.java.get().toInt())
 }

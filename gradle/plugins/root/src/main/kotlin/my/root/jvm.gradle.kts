@@ -1,4 +1,7 @@
 package my.root
+
+import my.root.util.VersionCatalog
+
 /**
  * The root plugin only defines the java version, dependency version constraints and a new configuration called [versionConstraints].
  */
@@ -8,7 +11,7 @@ plugins {
 
 java {
   toolchain {
-    languageVersion.set(JavaLanguageVersion.of(21))
+    languageVersion.set(JavaLanguageVersion.of(VersionCatalog.JAVA_VERSION))
   }
 }
 
