@@ -25,7 +25,7 @@ bom-coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.9.0"
 
 # plugin dependencies (for both projects and settings), naming convention: pluginDep/settingDep + -<nameInCamelCase>
 pluginDep-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
-settingDep-gradleEnterprise = "com.gradle.develocity:com.gradle.develocity.gradle.plugin:3.18.2"
+settingDep-gradleEnterprise = "com.gradle.develocity:com.gradle.develocity.gradle.plugin:3.19"
 settingDep-foojayResolver = "org.gradle.toolchains:foojay-resolver:0.9.0"
 
 # dependencies, naming convention: dep-<nameInCamelCase>
