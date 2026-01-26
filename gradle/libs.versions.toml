@@ -29,7 +29,7 @@ settingDep-gradleEnterprise = "com.gradle.develocity:com.gradle.develocity.gradl
 settingDep-foojayResolver = "org.gradle.toolchains:foojay-resolver:1.0.0"
 
 # dependencies, naming convention: dep-<nameInCamelCase>
-dep-mockk = "io.mockk:mockk:1.14.7"
+dep-mockk = "io.mockk:mockk:1.14.9"
 
 [plugins]
 # put your plugins used in the main build here
